@@ -1,0 +1,71 @@
+
+API: Emotion and Stress Detection using Flask
+
+
+ API 1: Analyze Facial Expressions
+------------------------------------
+URL: http://127.0.0.1:5000/analyze_emotion
+Method: POST
+Request:
+    Key: image
+    Type: File
+    Value: <upload image>
+
+Response:
+{
+  "emotions": [
+    {
+      "emotion": "Happy",
+      "confidence": 95.72
+    }
+  ]
+}
+
+------------------------------------
+
+ API 2: Analyze Eye Movements
+------------------------------------
+URL: http://127.0.0.1:5000/analyze_eye
+Method: POST
+Request:
+    Key: image
+    Type: File
+    Value: <Upload image>
+
+Response:
+{
+  "eye_status": [
+    {
+      "eye_status": "Open"
+    }
+  ]
+}
+
+------------------------------------
+
+ API 3: Analyze Micro-Expressions (Placeholder)
+------------------------------------------------
+URL: http://127.0.0.1:5000/analyze_micro
+Method: POST
+Request:
+    No data required
+
+Response:
+{
+  "status": "Micro-expression analysis coming soon"
+}
+
+------------------------------------
+
+API 4: Health Check
+----------------------
+URL: http://127.0.0.1:5000/health
+Method: GET
+Request:
+    No data required
+
+Response:
+{
+  "status": "API is running successfully"
+}
+
